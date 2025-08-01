@@ -1,0 +1,32 @@
+{
+  "name": "festival-de-musica",
+  "version": "1.0.0",
+  "description": "Aprendiendo Scss y npm",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerchoChainz/festival-musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP",
+    "NPM"
+  ],
+  "author": "Lazaro Estrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerchoChainz/festival-musica/issues"
+  },
+  "homepage": "https://github.com/FerchoChainz/festival-musica#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  }
+}
