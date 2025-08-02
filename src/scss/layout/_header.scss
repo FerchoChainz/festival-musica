@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+
+.header{
+    background-color: v.$green;
+
+    .header-content{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    h1{
+        color: v.$white;
+        margin: 0;
+    }
+}
+
+.main-nav{
+    display: flex;
+    gap: 2rem;
+    a{
+        color: v.$white;
+
+        &:hover {
+            color: v.$yellow;
+        }
+    }
+}
