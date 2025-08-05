@@ -1,29 +1,43 @@
-@use 'base/variables' as v;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
-.header{
-    background-color: v.$green;
+.header {
+  background-color: v.$green;
 
-    .header-content{
-        padding: 2rem;
+  .header-content {
+    padding: 2rem;
+    @include m.tablet{
         display: flex;
         justify-content: space-between;
         text-align: center;
     }
+  }
 
-    h1{
-        color: v.$white;
+  h1 {
+    color: v.$white;
+    text-align: center;
+    @include m.tablet{
+        text-align: left;
         margin: 0;
     }
+
+  }
 }
 
-.main-nav{
-    display: flex;
-    gap: 2rem;
-    a{
-        color: v.$white;
+.main-nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+  gap: 2rem;
 
-        &:hover {
-            color: v.$yellow;
-        }
+  @include m.tablet{
+    flex-direction: row;
+  }
+  a {
+    color: v.$white;
+
+    &:hover {
+      color: v.$yellow;
     }
+  }
 }
